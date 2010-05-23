@@ -7,7 +7,7 @@ GITWASH_OUTPUT_DIR=my_gitwash
 setup-gitwash:
 	git remote add -f gitwash $(GITWASH_URL)
 	git merge -s ours --no-commit gitwash/$(GITWASH_BRANCH)
-	git read-tree --prefix=$(GITWASH_OUPUT_DIR)/ -u gitwash/$(GITWASH_BRANCH)
+	git read-tree --prefix=$(GITWASH_OUTPUT_DIR)/ -u gitwash/$(GITWASH_BRANCH)
 	git commit -m "Merge gitwash docs as subdirectory"
 
 update-gitwash:
