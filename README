@@ -1,0 +1,12 @@
+==================
+ Gitwash-includer
+==================
+
+An example of how to include gitwash into your own projects docs.
+
+Here we use the example of the gitwash ipython docs.
+
+The principle is to use the git subtree merge strategy.
+
+See the Makefile for how it works.
+
