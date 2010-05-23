@@ -17,8 +17,8 @@ Put simply, to use gitwash_ in your project:
 * Edit the variables in your doc building Makefile to point to your own
   gitwash branch, and the relative location of the files in your doc
   tree.
-* (once) run ``make setup-gitwash``
-* (from time to time) run ``make update-gitwash``
+* (once) run ``make gitwash-first-time``
+* (from time to time) run ``make gitwash-update``
 
 
 .. _gitwash: http://github.com/matthew-brett/gitwash
