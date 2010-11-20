@@ -2,24 +2,15 @@
  Gitwash-includer
 ==================
 
-An example of how to include gitwash_ into your own project's docs.
+This was a tiny project to show how to include an early version of gitwash_ in
+your own project.  This approach used a git merge-tree strategy.  After a little
+bit of thinking, we rethought gitwash a bit and went for another approach, so
+this method became defunct for gitwash.  If you really want to see how it
+worked, then checkout the ``actual-master`` branch in this repo.
 
-Here we use the example of the gitwash ipython docs.
-
-The principle is to use the git subtree merge strategy.
-
-See the Makefile for how it works.
-
-Put simply, to use gitwash_ in your project:
-
-* make a gitwash branch with your own project name
-* Edit your doc building Makefile to include the targets in this here Makefile
-* Edit the variables in your doc building Makefile to point to your own
-  gitwash branch, and the relative location of the files in your doc
-  tree.
-* (once) run ``make gitwash-first-time``
-* (from time to time) run ``make gitwash-update``
-
+The way it currently works in gitwash is by using a script in the gitwash repo,
+called ``gitwash_dumper.py``, to process the gitwash files and push them into
+your own repo with your project name and other details.
 
 .. _gitwash: http://github.com/matthew-brett/gitwash
 
